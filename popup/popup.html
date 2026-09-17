@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Guardy</title>
+  <link rel="stylesheet" href="../assets/theme.css" />
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <main class="shell">
+    <header class="top">
+      <div class="hero-mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64">
+          <path d="M32 4 56 14v18c0 16-10.5 26.5-24 30C18.5 58.5 8 48 8 32V14L32 4z" fill="#1b241c"/>
+          <path d="M32 10 50 18v13.5c0 12-7.8 20-18 22.8-10.2-2.8-18-10.8-18-22.8V18L32 10z" fill="#d4a24c"/>
+          <path d="M22 33.5 29.5 41 44 24" fill="none" stroke="#1b241c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div>
+        <p class="kicker">Guardy</p>
+        <h1>A second set of eyes</h1>
+      </div>
+    </header>
+
+    <section id="status" class="status idle">
+      <p class="kicker" style="color:#efe4cf">This page</p>
+      <h2 id="headline">Ready when you are</h2>
+      <p id="summary">Open an email or tap Scan. I will look for scam tricks, fake links, and requests to change your banking information.</p>
+    </section>
+
+    <div class="actions">
+      <button class="btn btn-dark" id="scan">Scan this page</button>
+      <button class="btn btn-gold" id="practice">Practice with a fake scam</button>
+    </div>
+
+    <section class="stats">
+      <div class="stat"><b id="scanned">0</b><span>pages watched</span></div>
+      <div class="stat"><b id="blocked">0</b><span>scams flagged</span></div>
+    </section>
+
+    <section class="card family" id="family-card">
+      <p class="kicker">If you feel unsure</p>
+      <p id="family-line">Ask someone you trust before sending money or changing bank details.</p>
+    </section>
+
+    <ul class="alerts" id="alerts"></ul>
+
+    <footer>
+      <a href="../options/options.html" target="_blank">Settings & family contact</a>
+    </footer>
+  </main>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

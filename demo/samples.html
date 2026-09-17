@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Guardy practice inbox</title>
+  <link rel="stylesheet" href="../assets/theme.css" />
+  <link rel="stylesheet" href="samples.css" />
+</head>
+<body>
+  <div class="frame">
+    <aside>
+      <div class="brand">
+        <svg viewBox="0 0 64 64" width="40" height="40" aria-hidden="true">
+          <path d="M32 4 56 14v18c0 16-10.5 26.5-24 30C18.5 58.5 8 48 8 32V14L32 4z" fill="#1b241c"/>
+          <path d="M32 10 50 18v13.5c0 12-7.8 20-18 22.8-10.2-2.8-18-10.8-18-22.8V18L32 10z" fill="#d4a24c"/>
+          <path d="M22 33.5 29.5 41 44 24" fill="none" stroke="#1b241c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div>
+          <p class="kicker">Practice room</p>
+          <strong>Guardy Inbox</strong>
+        </div>
+      </div>
+      <p class="aside-copy">These messages are fake and cannot steal anything. Open one to see how Guardy warns you — especially about banking-change scams.</p>
+      <nav id="list"></nav>
+    </aside>
+    <section class="reader">
+      <div id="empty" class="empty">
+        <h1>Pick a message on the left</h1>
+        <p>Start with the red one. That is the kind of note that tricks people into changing their bank account.</p>
+      </div>
+      <article id="letter" hidden>
+        <header>
+          <p class="from" id="from"></p>
+          <h1 id="subject"></h1>
+        </header>
+        <div id="body" class="body"></div>
+      </article>
+    </section>
+  </div>
+  <script type="module" src="samples.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Guardy stopped this site</title>
+  <link rel="stylesheet" href="../assets/theme.css" />
+  <link rel="stylesheet" href="blocked.css" />
+</head>
+<body>
+  <main class="panel">
+    <div class="badge">Guardy</div>
+    <svg class="stop" viewBox="0 0 64 64" aria-hidden="true">
+      <circle cx="32" cy="32" r="30" fill="#b42318"/>
+      <rect x="28" y="14" width="8" height="24" rx="4" fill="#fff"/>
+      <circle cx="32" cy="48" r="4.5" fill="#fff"/>
+    </svg>
+    <h1 id="headline">This website is pretending to be a company you know</h1>
+    <p class="big">You did not do anything wrong. Close this page. Type the company’s address yourself, or use an app you already have.</p>
+    <p class="mono" id="url"></p>
+    <div class="row">
+      <button class="btn btn-dark" id="back">Take me back</button>
+      <button class="btn btn-ghost" id="anyway">I still want to continue</button>
+    </div>
+    <p class="help">Real banks never mind if you take an extra minute to check.</p>
+  </main>
+  <script src="blocked.js"></script>
+</body>
+</html>

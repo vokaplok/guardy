@@ -1,0 +1,62 @@
+body {
+  min-height: 100vh;
+  background: #1b241c;
+}
+
+.frame {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(280px, 360px) 1fr;
+}
+
+aside {
+  background: #142018;
+  color: #f6efe2;
+  padding: 28px 22px;
+}
+
+.brand { display: flex; gap: 12px; align-items: center; margin-bottom: 16px; }
+.brand strong { font-size: 22px; }
+.aside-copy { font-size: 17px; line-height: 1.45; color: #d5cbb6; }
+
+nav button {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  color: inherit;
+  border: 1px solid rgba(246,239,226,.16);
+  border-radius: 18px;
+  padding: 14px;
+  margin: 0 0 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+nav button b { display: block; font-size: 17px; margin-bottom: 4px; }
+nav button span { color: #cbbfa6; }
+nav button.active { background: #d4a24c; color: #1b241c; }
+nav button.active span { color: #4d4533; }
+
+.reader {
+  background:
+    radial-gradient(800px 300px at 80% 0%, #f3d9a0, transparent 50%),
+    #f6efe2;
+  padding: 36px;
+}
+
+.empty h1, #letter h1 { font-size: 40px; margin: 0 0 12px; }
+.empty p, .from, .body { font-size: 20px; line-height: 1.5; }
+.from { font-weight: 800; margin-bottom: 6px; }
+
+.body {
+  background: #fffaf1;
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: var(--shadow);
+}
+
+.body a { color: #8a1f16; font-weight: 800; }
+
+@media (max-width: 840px) {
+  .frame { grid-template-columns: 1fr; }
+}

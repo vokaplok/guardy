@@ -1,0 +1,25 @@
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(900px 500px at 100% 0%, #e7c888 0%, transparent 45%),
+    linear-gradient(180deg, #f8f1e3, #e9dcc3);
+}
+
+.page {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+
+h1 { font-size: 46px; margin: 0 0 12px; line-height: 1.1; }
+.lede { font-size: 22px; line-height: 1.45; max-width: 40rem; }
+.grid { display: grid; gap: 18px; margin: 28px 0; }
+.card h2 { margin-top: 0; font-size: 28px; }
+.watch { font-size: 20px; line-height: 1.45; padding-left: 22px; }
+.watch li { margin: 0 0 10px; }
+.saved {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--safe);
+}
+#save { margin-top: 8px; }

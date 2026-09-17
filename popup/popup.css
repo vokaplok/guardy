@@ -1,0 +1,60 @@
+html, body { width: 420px; }
+body { background:
+  radial-gradient(1200px 400px at 20% -10%, #f3d9a0 0%, transparent 50%),
+  linear-gradient(180deg, #f8f1e3, #efe3cc);
+}
+
+.shell { padding: 18px 18px 16px; }
+
+.top {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.top h1 {
+  margin: 0;
+  font-size: 26px;
+  line-height: 1.1;
+}
+
+.actions {
+  display: grid;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.family p:last-child {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.alerts {
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+}
+
+.alerts li {
+  padding: 10px 0;
+  border-top: 1px solid rgba(27,36,28,.12);
+  font-size: 16px;
+}
+
+.alerts b { display: block; font-size: 16px; }
+.alerts span { color: var(--muted); }
+
+footer {
+  margin-top: 8px;
+  text-align: center;
+}
+
+footer a {
+  color: var(--ink);
+  font-weight: 800;
+  font-size: 16px;
+}
+
+#scan:active, #practice:active { transform: translateY(1px); }

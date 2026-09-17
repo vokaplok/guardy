@@ -1,0 +1,55 @@
+{
+  "manifest_version": 3,
+  "name": "Guardy — Scam Shield",
+  "short_name": "Guardy",
+  "version": "1.0.0",
+  "homepage_url": "https://github.com/vokaplok/guardy",
+  "description": "A calm second set of eyes. Warns you about phishing emails, fake websites, and messages that try to change your banking information.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "Guardy",
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background/service-worker.js",
+    "type": "module"
+  },
+  "options_page": "options/options.html",
+  "permissions": [
+    "storage",
+    "tabs",
+    "webNavigation",
+    "notifications",
+    "clipboardWrite"
+  ],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content/content.js"],
+      "type": "module",
+      "run_at": "document_idle"
+    }
+  ],
+  "commands": {
+    "scan-page": {
+      "suggested_key": { "default": "Alt+G" },
+      "description": "Scan this page for scams"
+    }
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["warning/*", "icons/*", "demo/*", "lib/*", "content/*", "assets/*"],
+      "matches": ["http://*/*", "https://*/*"]
+    }
+  ]
+}

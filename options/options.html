@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Guardy settings</title>
+  <link rel="stylesheet" href="../assets/theme.css" />
+  <link rel="stylesheet" href="options.css" />
+</head>
+<body>
+  <main class="page">
+    <header>
+      <p class="kicker" id="welcome-kicker">Settings</p>
+      <h1 id="title">Make Guardy feel like family</h1>
+      <p class="lede">Large print, plain English, and a person to call when something feels off. All scanning happens on this computer — emails are not sent to the cloud.</p>
+    </header>
+
+    <form id="form" class="grid">
+      <section class="card">
+        <h2>Who should they call?</h2>
+        <p class="help">If a message looks like a scam, Guardy will show this name in big letters.</p>
+        <div class="field">
+          <label for="familyName">Name of a trusted person</label>
+          <input id="familyName" name="familyName" placeholder="Maria, my daughter" />
+        </div>
+        <div class="field">
+          <label for="familyPhone">Their phone number</label>
+          <input id="familyPhone" name="familyPhone" placeholder="(555) 013-2480" />
+        </div>
+        <div class="field">
+          <label for="homeBank">Their bank’s name</label>
+          <input id="homeBank" name="homeBank" placeholder="Chase, Bank of America, Navy Federal…" />
+          <p class="help">Used to catch emails that pretend to be from their bank.</p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Protection</h2>
+        <label class="toggle">
+          <input type="checkbox" id="enabled" checked />
+          Keep Guardy on
+        </label>
+        <p class="help">Turn this off only if a trusted helper is sitting with you.</p>
+        <div style="height:12px"></div>
+        <button type="button" class="btn btn-gold" id="pause">Pause for 15 minutes</button>
+        <p class="help">A short pause is safer than turning protection off for the day.</p>
+      </section>
+
+      <section class="card">
+        <h2>What Guardy watches for</h2>
+        <ul class="watch">
+          <li>Emails that rush you or threaten to lock an account</li>
+          <li>Requests to change bank accounts, routing numbers, or direct deposit</li>
+          <li>Fake IRS, Social Security, Medicare, Apple, or Microsoft messages</li>
+          <li>Links that say one website but go somewhere else</li>
+          <li>The “grandparent emergency” money scam</li>
+        </ul>
+        <a class="btn btn-dark" href="../demo/samples.html">Try a harmless practice scam</a>
+      </section>
+    </form>
+
+    <p id="saved" class="saved" hidden>Saved. You can close this tab.</p>
+    <button class="btn btn-dark" id="save">Save these settings</button>
+  </main>
+  <script type="module" src="options.js"></script>
+</body>
+</html>
